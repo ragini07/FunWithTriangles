@@ -1,0 +1,137 @@
+:root{
+    --primary-color:#472424;
+    --secondary-color:#8d872c;
+    --link-color:aliceblue;
+}body{
+    background-image: url('images/triangle3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-position: 50% 50%;
+   background-size: cover; 
+   max-width: 40rem;
+    margin: auto;
+    
+ 
+}
+.title{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.container{
+    display: flex;
+    /* background-color: DodgerBlue; */
+    margin-top: 6rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.container > div {
+    /* background-color: #2b2525; */
+    margin: 10px;
+  
+    font-size: 30px;
+  }
+  .row1,.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row1 > div,.row2 >div{
+    background-color: var(--primary-color);
+    margin: 10px;
+    /* padding: 20px; */
+    font-size: 30px;
+    height:8rem;
+    width:9rem;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    transition-property: width, height;
+    transition-duration: 1s;
+    
+    
+  }
+  .row1 > div:hover,.row2 > div:hover {
+    width: 9.3rem;
+    height: 8.3rem;
+    background-color: var(--secondary-color);
+  }
+  .game{
+      text-decoration: none;
+      color:var(--link-color);
+  }
+.description{
+  
+   
+    text-align: center;
+    padding-top:3rem;
+    padding-bottom:2rem;
+}
+input{
+    margin:1rem;
+    padding:0.3rem;
+    border-radius: 0.5rem;
+    width:10rem;
+
+
+}
+button{
+    margin:1rem 18rem;
+    padding:0.4rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color:white;
+
+}
+.back{
+ 
+    text-decoration: none;
+    border:2px solid var(--primary-color);
+    padding:0.4rem;
+    color:var(--primary-color);
+    font-weight: bolder;
+    border-radius:0.5rem;
+   
+}
+.inputSide ,#base ,#height{
+    margin-left:5rem;
+}
+.triangleimg{
+    width:9rem;
+    height:9rem;
+    display: block;
+    margin-left:15rem;
+}
+.question{
+    background-color: var(--link-color);
+    font-weight: bolder;
+    padding:0.1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+}
+.question > label{
+    display: block;
+   
+}
+.question >label >input{
+    margin:0.3rem;
+    width:2.5rem;
+}
+#output{
+    text-align: center;
+    padding: 1rem;
+    background-color: #8d872c;
+}
+.hide{
+    display: none;
+}
+
+.radio-option >input{
+    width:2.5rem;
+}
+.radio-option >label{
+    font-weight: bold;
+}

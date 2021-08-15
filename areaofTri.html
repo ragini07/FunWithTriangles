@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun With Triangle</title>
+</head>
+<body>
+ 
+    <div>
+        <br>
+    <a class="back" href="index.html">Back</a>
+    <h1 class="title">Calculate Area</h1>
+    <h2 class="description">Select an option below as per the data you have for a triangle</h2>
+
+   <div id="option1" class="radio-option">
+    <input type="radio" name="radio" id="area1" class="calcArea">
+       <label for="area1"> If you have base and height length</label>  
+   </div>
+
+   <div id="option2" class="radio-option">
+    <input type="radio" name="radio" id="area2" class="calcArea">
+       <label for="area2">If you have length of 3 sides</label>  
+   </div>
+
+   <div id="option3" class="radio-option">
+    <input type="radio" name="radio" id="area3" class="calcArea">
+       <label for="area3"> If you have length of 2 sides and included angle</label>  
+   </div>
+
+  
+   <div class="hide section">
+    <img src="https://i0.wp.com/algorithms.tutorialhorizon.com/files/2018/08/Area-of-Triangle-using-base-and-Height.png" alt="" class="triangleimg">
+    <input type="number" class="input1"  placeholder="Enter Base">
+    <input type="number" class="input1"  placeholder="Enter Height">
+    <button class="submit">Calculate</button>
+    <h3 id="output">Your Answer Will Show Here</h3>
+   </div>
+
+
+   <div class="hide section">
+    <img src="https://cdn.inchcalculator.com/wp-content/uploads/2020/09/herons-formula.png" alt="" class="triangleimg">
+    <input type="number" class="input2"  placeholder="Enter a">
+    <input type="number" class="input2"  placeholder="Enter b">
+    <input type="number" class="input2"  placeholder="Enter c">
+    <button class="submit">Calculate</button>
+    <h3 id="output">Your Answer Will Show Here</h3>
+   </div>
+
+
+   <div class="hide section">
+    <img src="https://tamali.net/en/calculator/2d/triangle/area/img/area_alfa.jpg" alt="" class="triangleimg">
+    <input type="number" class="input3"  placeholder="Enter b">
+    <input type="number" class="input3"  placeholder="Enter c">
+    <input type="number" class="input3"  placeholder="Enter angle in deg">
+    <button class="submit">Calculate</button>
+    <h3 id="output">Your Answer Will Show Here</h3>
+   </div>
+
+   
+    
+</div>
+
+
+
+
+    <script src="areaofTri.js"></script>
+</body>
+</html>
